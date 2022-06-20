@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&family=Poppins:ital,wght@200;300;400;500;600;700,800;900&display=swap');
+
+* {
+
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'poppins', sans-serif;
+}
+
+body {
+  width: 100%;
+  background-color: #355178;
+  color: white;
+}
+
+header {
+  display: flex;
+  background-color: black;
+  color: #edf0f1;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+}
+
+footer {
+  background-color: black;
+  color: #edf0f1;
+  padding: 50px;
+  text-align: center;
+}
+
+.menu {
+  padding-right: 50px;
+}
+
+.logo {
+  cursor: pointer;
+  padding-left: 20px;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 5px 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease 0;
+}
+
+.nav-links li a:hover {
+  color: #0088a9;
+}
+
+.picture-container {
+  position: relative;
+  margin: 0;
+  width: 100%;
+}
+
+.myImg img {
+  width: 100%;
+}
+
+
+.text-block {
+  width: 70%;
+  margin: 0 auto 0 1rem;
+  line-height: 2;
+  font-size: x-large;
+  padding: 1rem;
+}
+
+.hobbies {
+  position: relative;
+  width: 70%;
+  margin: 50px;
+  text-align: left;
+  overflow: hidden;
+}
+
+.hobbies img {
+  width: 50%;
+  float: left;
+  margin-right: 100px;
+}
+
+
+.skills {
+  width: 70%;
+  padding: 50px;
+  text-align: left;
+  margin: 5rem auto 3rem auto;
+}
+
+.skills-image {
+  width: 45%;
+  float: right;
+  margin-bottom: 2rem;
+}
+
+.btns {
+  text-align: center;
+  padding: 30px;
+}
+
+.button {
+  background-color: #22229f;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-icons {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.fa-brands {
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+
+
+@media (max-width: 1084px) {
+  body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text-block {
+    width: 95%;
+    text-align: center;
+  }
+
+  .hobbies {
+    width: 100%;
+    padding: 3rem;
+  }
+
+  .hobbies img {
+    width: 89%;
+    margin-bottom: 2rem;
+  }
+
+  .hobbbies-section {
+    overflow: hidden;
+  }
+
+  .skills {
+    width: 100%;
+  }
+
+  .skills-image {
+    width: 100%;
+  }
+
+
+}

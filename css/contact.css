@@ -1,0 +1,176 @@
+body {
+  background: url('../img/Dark-tel.jpg')no-repeat;
+  background-size: cover;
+  padding: 50px;
+  position: relative;
+}
+
+header {
+  position: absolute;
+  text-align: center;
+  color: aliceblue;
+  width: 55%;
+  left: 20%;
+  top: 10px;
+  font-weight: 500;
+}
+
+header p::first-letter {
+  text-transform: capitalize;
+  font-size: 25px;
+}
+
+.contact {
+  position: relative;
+  padding: 50px 100px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 50px;
+}
+
+.contactInfo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  padding: 20px 0;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+}
+
+.icon {
+  border-radius: 50%;
+  min-width: 60px;
+  height: 60px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+.text {
+
+  font-size: 15px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.text h2 {
+  color: aliceblue;
+  font-weight: 400;
+}
+
+/* contact form */
+.contactForm {
+  width: 40%;
+  padding: 40px;
+  display: flex;
+  color: #fff;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.contactForm h2 {
+  color: yellow;
+  line-height: 2;
+  font-weight: 500;
+}
+
+span {
+  color: #fff;
+}
+
+.inputBox {
+  width: 100%;
+  position: relative;
+  margin-top: 10px;
+}
+
+.inputBox input,
+textarea {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 15px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+  border-radius: 10px;
+}
+
+.inputBox label {
+  position: relative;
+  left: 0;
+  padding: 5px 0;
+  font-size: 15px;
+  margin: 10px 0;
+  pointer-events: none;
+  color: antiquewhite;
+}
+
+::placeholder {
+  padding-left: 15px;
+}
+
+button {
+  background-color: yellow;
+  width: 30%;
+  border-radius: 10px;
+  padding: 5px 0;
+  font-weight: 600;
+  border: none;
+}
+
+.media {
+  width: 30%;
+  display: flex;
+  color: #fff;
+  position: absolute;
+}
+
+.mediaIcons {
+  list-style: none;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-brands {
+  margin: 0 25px;
+  color: #fff;
+}
+
+@media (min-width:991) {
+  .contact {
+    padding: 50px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contactinfo .contactForm {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}

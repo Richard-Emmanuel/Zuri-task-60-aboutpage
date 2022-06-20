@@ -1,0 +1,128 @@
+body {
+  height: 100vh;
+  display: flex;
+  background: url(/img/pexels-johannes-plenio-1103970.jpg) no-repeat fixed;
+  background-size: cover;
+  align-items: center;
+  justify-content: center
+}
+
+input,
+select {
+  width: 195px;
+  -ms-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  width: 1000px;
+}
+
+.image {
+  width: 100%;
+
+}
+
+.imageContainer {
+  background: url(/img/surface-ddcLX7Iis44-unsplash.jpg) no-repeat fixed;
+  width: 100%;
+  background-size: cover;
+  padding-top: 100%;
+}
+
+.formContainer {
+  background: rgb(15, 15, 15);
+  max-width: 500px;
+  width: 100%;
+  padding: 10px;
+}
+
+.title {
+  position: relative;
+  font-size: 20px;
+  font-weight: 600;
+  color: #800080;
+}
+
+
+.inputFields {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.fields {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0;
+  width: calc(100% / 3 -15px);
+}
+
+.fields label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #2e2e2e;
+}
+
+.fields input,
+select,
+option {
+  outline: none;
+  height: 40px;
+  margin: 5px 0;
+  border: 1px solid #aaa;
+  text-align: center;
+}
+
+::placeholder {
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+}
+
+.buttomLink {
+  display: block;
+}
+
+button {
+  border-radius: 5px;
+  padding: 5px 40px;
+  margin: 3px 0;
+  color: greenyellow;
+}
+
+
+@media (max-width: 1000px) {
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image {
+    width: 500px;
+  }
+  .imageContainer{
+    padding: 100%;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .inputFields {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
