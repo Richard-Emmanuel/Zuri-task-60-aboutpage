@@ -6,7 +6,7 @@
 
 main {
   height: 100vh;
-  background: url(/img/Lap.jpg) no-repeat;
+  background: url(img/Lap.jpg) no-repeat;
   background-size: cover;
 }
 
@@ -84,5 +84,6 @@ input[type="submit"]:hover {
 }
 
 span a {
+  text-decoration: none;
   color: white;
 }

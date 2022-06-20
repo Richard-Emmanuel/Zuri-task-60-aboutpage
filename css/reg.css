@@ -1,7 +1,7 @@
 body {
   height: 100vh;
   display: flex;
-  background: url(/img/pexels-johannes-plenio-1103970.jpg) no-repeat fixed;
+  background: url(img/pexels-johannes-plenio-1103970.jpg) no-repeat fixed;
   background-size: cover;
   align-items: center;
   justify-content: center
@@ -22,30 +22,19 @@ select {
   width: 1000px;
 }
 
-.image {
-  width: 100%;
-
-}
-
-.imageContainer {
-  background: url(/img/surface-ddcLX7Iis44-unsplash.jpg) no-repeat fixed;
-  width: 100%;
-  background-size: cover;
-  padding-top: 100%;
-}
-
 .formContainer {
   background: rgb(15, 15, 15);
   max-width: 500px;
   width: 100%;
   padding: 10px;
+  margin: auto;
 }
 
 .title {
   position: relative;
   font-size: 20px;
   font-weight: 600;
-  color: #800080;
+  color: yellow;
 }
 
 
@@ -55,6 +44,7 @@ select {
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 10px;
+
 }
 
 .fields {
@@ -65,9 +55,9 @@ select {
 }
 
 .fields label {
-  font-size: 12px;
-  font-weight: 500;
-  color: #2e2e2e;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
 }
 
 .fields input,
@@ -84,23 +74,31 @@ option {
   text-align: center;
 }
 
-.buttons {
-  display: flex;
-}
-
-.buttomLink {
-  display: block;
+a {
+  color: rgb(12, 230, 117);
+  text-decoration: none;
 }
 
 button {
-  border-radius: 5px;
+  border: 1px solid red;
+  border-radius: 1rem;
   padding: 5px 40px;
   margin: 3px 0;
-  color: greenyellow;
+  background-color: black;
+  color: rgb(235, 243, 32);
+  font-size: 20px;
+  font-weight: 600;
 }
 
+.link {
+  color: #fff;
+}
 
-@media (max-width: 1000px) {
+@media (max-width: 1003px) {
+  input,
+  select {
+    width: 95%;
+  }
 
   .container {
     display: flex;
@@ -112,7 +110,8 @@ button {
   .image {
     width: 500px;
   }
-  .imageContainer{
+
+  .imageContainer {
     padding: 100%;
   }
 
@@ -121,8 +120,10 @@ button {
   }
 
   .inputFields {
-    display: flex;
-    flex-direction: column;
+    margin: auto 3rem;
   }
 
+  .fields {
+    width: 100%;
+  }
 }

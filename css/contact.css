@@ -1,28 +1,23 @@
 body {
-  background: url('../img/Dark-tel.jpg')no-repeat;
+  background: url('img/Dark-tel.jpg')no-repeat;
   background-size: cover;
-  padding: 50px;
   position: relative;
 }
 
-header {
-  position: absolute;
-  text-align: center;
+.head-text {
   color: aliceblue;
-  width: 55%;
-  left: 20%;
-  top: 10px;
-  font-weight: 500;
+  margin: auto;
 }
 
-header p::first-letter {
-  text-transform: capitalize;
-  font-size: 25px;
+.contact-msg {
+  display: inline-block;
+  color: rgb(244, 244, 241);
+  font-size: x-large;
 }
 
 .contact {
   position: relative;
-  padding: 50px 100px;
+  padding: 1rem 8rem;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -30,17 +25,17 @@ header p::first-letter {
 }
 
 .container {
-  width: 100%;
-  justify-content: center;
-  align-items: center;
+  width: 80%;
+  padding: 1rem;
   display: flex;
   margin-top: 50px;
 }
 
 .contactInfo {
-  width: 50%;
+  width: 40%;
   display: flex;
   flex-direction: column;
+  margin-right: 5rem;
 }
 
 .box {
@@ -56,6 +51,7 @@ header p::first-letter {
   min-width: 60px;
   height: 60px;
   background: #fff;
+  color: black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,7 +59,6 @@ header p::first-letter {
 }
 
 .text {
-
   font-size: 15px;
   margin: 20px;
   display: flex;
@@ -78,13 +73,13 @@ header p::first-letter {
 
 /* contact form */
 .contactForm {
-  width: 40%;
+  width: 60%;
   padding: 40px;
   display: flex;
   color: #fff;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .contactForm h2 {
@@ -159,18 +154,32 @@ button {
   color: #fff;
 }
 
-@media (min-width:991) {
+
+
+@media (max-width:1078px) {
   .contact {
-    padding: 50px;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .contact-msg {
+    width: 100%;
   }
 
   .container {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 
-  .contactinfo .contactForm {
+  .contactInfo {
     width: 100%;
-    margin-bottom: 40px;
   }
+
+  .contactForm {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
 }
