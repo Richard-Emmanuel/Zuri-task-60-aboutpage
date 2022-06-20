@@ -1,7 +1,7 @@
 body {
   height: 100vh;
   display: flex;
-  background: url(img/pexels-johannes-plenio-1103970.jpg) no-repeat fixed;
+  background: url(../img/pexels-johannes-plenio-1103970.jpg) no-repeat fixed;
   background-size: cover;
   align-items: center;
   justify-content: center

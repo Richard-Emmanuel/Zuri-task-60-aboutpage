@@ -1,5 +1,5 @@
 body {
-  background: url('img/Dark-tel.jpg')no-repeat;
+  background: url('../img/Dark-tel.jpg')no-repeat;
   background-size: cover;
   position: relative;
 }
